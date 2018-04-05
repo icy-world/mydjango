@@ -19,5 +19,5 @@ from django.conf.urls import url,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^go/', include('go.urls')),
+    url(r'^test_ask/', include('test_ask.urls')),
 ]

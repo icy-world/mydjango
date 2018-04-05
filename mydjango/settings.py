@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'test_ask',
 ]
 
 MIDDLEWARE = [
@@ -75,9 +76,21 @@ WSGI_APPLICATION = 'mydjango.wsgi.application'
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
 DATABASES = {
+    'db1': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'testdjango',
+        'USER': 'root',
+        'PASSWORD': 'wiscess!@#$qwer',
+        'HOST': '123.56.158.134',
+        'PORT': '3307',
+    },
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'communication',
+        'USER': 'root',
+        'PASSWORD': 'wiscess!@#$qwer',
+        'HOST': '123.56.158.134',
+        'PORT': '3307',
     }
 }
 

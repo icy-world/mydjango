@@ -73,5 +73,29 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Panel heading</div>
+  <div class="panel-body">
+    <p>...</p>
+  </div>
+
+  <!-- Table -->
+  <table class="table">
+    <tr>
+        <th>年级</th>
+        <th>发布状态</th>
+        <th>版本</th>
+    </tr>
+    {%for book in data%}
+    <tr>
+        <th>{{book.grade_name}}</th>
+        <th>{{book.publishing}}</th>
+        <th>{{ book.textbooks_version }}</th>
+    </tr>
+    {%endfor%}
+  </table>
+</div>
 </body>
 </html>
